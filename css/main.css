@@ -47,15 +47,40 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding-right: 15px;
   padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -454,24 +479,50 @@ body {
   background-color: #188ce8;
 }
 
-.company-image-list {
+.company {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item-company {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .item-company {
+    width: calc(100% / 2 - 30px);
+  }
+  .item-company:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-company {
+    width: 270px;
+    margin: 0 auto;
+  }
+  .item-company:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .company-image {
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--light-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
-.company-image-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .company-image {
+    width: 270px;
+  }
 }
 
 .company-image-svg {
@@ -479,27 +530,19 @@ body {
   height: 70px;
 }
 
-.company {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.item-company {
-  width: 270px;
-  margin: 0 auto;
-}
-
-.item-company:not(:last-child) {
-  margin-right: 30px;
-}
-
 .company .title {
+  text-align: center;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .company .title {
+    text-align: left;
+  }
 }
 
 .company .text {
