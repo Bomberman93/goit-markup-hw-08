@@ -1,0 +1,40 @@
+.activity-nave {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item-service {
+    position: relative;
+    width: 370px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .section-nave {
+    padding-top: 0px;
+  }
+  .todo {
+    margin-bottom: 50px;
+  }
+  .todo-text {
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    min-height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+  }
