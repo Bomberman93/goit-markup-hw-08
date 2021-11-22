@@ -2,21 +2,32 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+      @media screen and (min-width: 1200px){
+        display: flex;
+      }
   }
   .footer-container {
     text-align: center;
-      @media screen and (min-width: 768px) {
-
-      }
       @media screen and (min-width: 1200px) {
         display: flex;
+        text-align: start;
         align-items: baseline;
       }
+  }
+  .footer-container-address {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
   }
 
   .footer-link {
     @media screen and (min-width: 768px) {
-      display: flex;
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
 
     }
   }
@@ -58,9 +69,7 @@
     color: #ffffff;
     margin-bottom: 20px;
   }
-  .footer-right {
-    // margin-left: 70px;
-  }
+
   .footer-right-list {
     display: flex;
     align-items: center;
@@ -95,11 +104,16 @@
   }
 
   .footer-centr-right {
-    // margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      @media screen and (min-width: 1200px) {
+        display: block;
+        margin-left: 93px;
+      }
   }
   .footer-input-email {
     width: 100%;
-    // width: 358px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -119,12 +133,17 @@
      :hover {
       border-color: var(--accent-color);
     }
+      @media screen and (min-width: 768px) {
+        width: 450px;
+      }
+      @media screen and (min-width: 1200px){
+        width: 358px;
+      }
+
   }
-  
   .footer-button-centr-right {
     position: relative;
     margin-top: 20px;
-    // margin-left: 12px;
     width: 200px;
     height: 50px;
     background-color: var(--accent-color);
@@ -138,7 +157,12 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     padding: 10px 62px 10px 29px;
+      @media screen and (min-width: 1200px){
+        margin-left: 12px;
+        margin-top: 0px;
+      }
   }
+
   .footer-podpiska-svg {
     position: absolute;
     top: 50%;
