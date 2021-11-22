@@ -1151,6 +1151,12 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .location-nave {
+    margin-bottom: 0;
+  }
+}
+
 .location:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -1192,6 +1198,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-right-list {
+    margin-bottom: 0;
+  }
 }
 
 .footer-right-item {
