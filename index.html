@@ -56,16 +56,66 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open">
+          <svg class="menu-open-svg">
+            <use href="./images/icoons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <button type="button" class="menu-close">
+          <svg class="menu-open-svg">
+            <use href="./images/icoons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <div class="menu-top">
+         <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link link current">Студия</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="mobile-menu-link link">Портфолио</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link link">Контакты</a>
+          </li>
+         </ul>
+        </div> 
+       <div class="menu-bottom">
+        <ul class="mobile-contact-list list">
+         <li class="mobile-contact-item">
+          <a href="" class="mobile-menu-contact-link link">
+          +38 096 111 11 11
+          </a>
+         </li>
+         <li class="mobile-contact-item">
+          <a href="" class="mobile-menu-email-link link">
+           info@devstudio.com
+          </a>
+         </li>
+        </ul>
+        <ul class="mobile-social-list list">
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">Instagram</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">Twitter</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">Facebook</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">LinkedIn</a>
+          </li>
+        </ul>
+       </div>
       </div>
     </header>
     <!--Заказ услуги-->
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-title">
-            ЭФФЕКТИВНЫЕ РЕШЕНИЯ 
-            ДЛЯ ВАШЕГО БИЗНЕСА
-          </h1>
+          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button type="button" class="button-primary" data-modal-open>
             Заказать услугу
           </button>
@@ -130,49 +180,48 @@
 
       <!--Предоставление услуг-->
 
-      <section class="section section-nave"> 
+      <section class="section section-nave">
         <div class="container">
           <h2 class="section-title todo">Чем мы занимаемся</h2>
           <ul class="activity-nave list">
             <li class="item-service">
               <h3 class="todo-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
-                <picture>
-                    <source srcset="
-                    ./images/chem-zanimaemcya/img-desktop-1x-1.jpg 1x, 
+              <picture>
+                <source
+                  srcset="
+                    ./images/chem-zanimaemcya/img-desktop-1x-1.jpg 1x,
                     ./images/chem-zanimaemcya/img-desktop-2x-1.jpg 2x
-                    "
-                    media="(min-width: 1200px)"
-                    />
-                    <img src="images/box1.jpg" alt="box1" width="370" 
-                    />
-                </picture>
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="images/box1.jpg" alt="box1" width="370" />
+              </picture>
             </li>
             <li class="item-service">
               <h3 class="todo-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
               <picture>
-                <source srcset="
-                ./images/chem-zanimaemcya/img-desktop-1x-2.jpg 1x, 
-                ./images/chem-zanimaemcya/img-desktop-2x-2.jpg 2x
-                "
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/chem-zanimaemcya/img-desktop-1x-2.jpg 1x,
+                    ./images/chem-zanimaemcya/img-desktop-2x-2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
-                <img src="images/box2.jpg" alt="box2" width="370"
-                />
-            </picture>
-              
+                <img src="images/box2.jpg" alt="box2" width="370" />
+              </picture>
             </li>
             <li class="item-service">
               <h3 class="todo-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
               <picture>
-                <source srcset="
-                ./images/chem-zanimaemcya/img-desktop-1x-3.jpg 1x, 
-                ./images/chem-zanimaemcya/img-desktop-2x-3.jpg 2x
-                "
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/chem-zanimaemcya/img-desktop-1x-3.jpg 1x,
+                    ./images/chem-zanimaemcya/img-desktop-2x-3.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <img src="images/box3.jpg" alt="box3" width="370" />
               </picture>
-              
             </li>
           </ul>
         </div>
@@ -185,29 +234,32 @@
           <ul class="command-nave list">
             <li class="command-people">
               <picture>
-                <source srcset="
-                ./images/team/img1-desktop-1x.jpg     1x, 
-                ./images/team/img1-desktop-2x.jpg     2x
-                "
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/img1-desktop-1x.jpg 1x,
+                    ./images/team/img1-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
-                <source srcset="
-                ./images/team/img1-tablet-1x.jpg     1x, 
-                ./images/team/img1-tablet-2x.jpg     2x
-                "
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/img1-tablet-1x.jpg 1x,
+                    ./images/team/img1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source srcset="
-                ./images/team/img1-mob-1x.jpg     1x, 
-                ./images/team/img1-mob-2x.jpg     2x
-                "
-                media="(min-width: 320px)"
+                <source
+                  srcset="
+                    ./images/team/img1-mob-1x.jpg 1x,
+                    ./images/team/img1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
                 />
                 <img
-                class="command-image"
-                src="images/img.jpg"
-                alt="photo"
-                width="270"
+                  class="command-image"
+                  src="images/img.jpg"
+                  alt="photo"
+                  width="270"
                 />
               </picture>
               <div class="command">
@@ -247,29 +299,32 @@
             </li>
             <li class="command-people">
               <picture>
-                <source srcset="
-                ./images/team/img2-desktop-1x.jpg     1x, 
-                ./images/team/img2-desktop-2x.jpg     2x
-                "
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/img2-desktop-1x.jpg 1x,
+                    ./images/team/img2-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
-                <source srcset="
-                ./images/team/img2-tablet-1x.jpg     1x, 
-                ./images/team/img2-tablet-2x.jpg     2x
-                "
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/img2-tablet-1x.jpg 1x,
+                    ./images/team/img2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source srcset="
-                ./images/team/img2-mob-1x.jpg     1x, 
-                ./images/team/img2-mob-2x.jpg     2x
-                "
-                media="(min-width: 320px)"
+                <source
+                  srcset="
+                    ./images/team/img2-mob-1x.jpg 1x,
+                    ./images/team/img2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
                 />
                 <img
-                class="command-image"
-                src="images/img(1).jpg"
-                alt="photo1"
-                width="270"
+                  class="command-image"
+                  src="images/img(1).jpg"
+                  alt="photo1"
+                  width="270"
                 />
               </picture>
               <div class="command">
@@ -309,29 +364,32 @@
             </li>
             <li class="command-people">
               <picture>
-                <source srcset="
-                ./images/team/img3-desktop-1x.jpg     1x, 
-                ./images/team/img3-desktop-2x.jpg     2x
-                "
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/img3-desktop-1x.jpg 1x,
+                    ./images/team/img3-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
-                <source srcset="
-                ./images/team/img3-tablet-1x.jpg     1x, 
-                ./images/team/img3-tablet-2x.jpg     2x
-                "
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/img3-tablet-1x.jpg 1x,
+                    ./images/team/img3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source srcset="
-                ./images/team/img3-mob-1x.jpg     1x, 
-                ./images/team/img3-mob-2x.jpg     2x
-                "
-                media="(min-width: 320px)"
+                <source
+                  srcset="
+                    ./images/team/img3-mob-1x.jpg 1x,
+                    ./images/team/img3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
                 />
                 <img
-                class="command-image"
-                src="images/img(2).jpg"
-                alt="photo2"
-                width="270"
+                  class="command-image"
+                  src="images/img(2).jpg"
+                  alt="photo2"
+                  width="270"
                 />
               </picture>
               <div class="command">
@@ -371,32 +429,35 @@
             </li>
             <li class="command-people">
               <picture>
-                <source srcset="
-                ./images/team/img4-desktop-1x.jpg     1x, 
-                ./images/team/img4-desktop-2x.jpg     2x
-                "
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/img4-desktop-1x.jpg 1x,
+                    ./images/team/img4-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
-                <source srcset="
-                ./images/team/img4-tablet-1x.jpg     1x, 
-                ./images/team/img4-tablet-2x.jpg     2x
-                "
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/img4-tablet-1x.jpg 1x,
+                    ./images/team/img4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source srcset="
-                ./images/team/img4-mob-1x.jpg     1x, 
-                ./images/team/img4-mob-2x.jpg     2x
-                "
-                media="(min-width: 320px)"
+                <source
+                  srcset="
+                    ./images/team/img4-mob-1x.jpg 1x,
+                    ./images/team/img4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
                 />
                 <img
-                class="command-image"
-                src="images/img(3).jpg"
-                alt="photo3"
-                width="270"
+                  class="command-image"
+                  src="images/img(3).jpg"
+                  alt="photo3"
+                  width="270"
                 />
               </picture>
-            <div class="command">
+              <div class="command">
                 <h3 class="title title-name">Михаил Ермаков</h3>
                 <p class="position">UI Designer</p>
                 <ul class="command-icoons-list list">
@@ -490,64 +551,65 @@
     <!--Как с нами связаться-->
     <footer class="footer-bgr">
       <div class="container footer-container">
-      <div class="footer-container-address">
-        <div class="footer-link">
-          <a href="index.html" class="logo logo-footer">
-            <span class="logo-webstudio">Web</span><span class="logo-webstudiotwo">Studio</span>
-          </a>
-          <address class="location-nave">
-            <ul class="contact-footer list">
-              <li class="location">
-                <a href="https://goo.gl/maps/7xyx75h3Avp7zGrV7" class="nave">
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-container-address">
+          <div class="footer-link">
+            <a href="index.html" class="logo logo-footer">
+              <span class="logo-webstudio">Web</span
+              ><span class="logo-webstudiotwo">Studio</span>
+            </a>
+            <address class="location-nave">
+              <ul class="contact-footer list">
+                <li class="location">
+                  <a href="https://goo.gl/maps/7xyx75h3Avp7zGrV7" class="nave">
+                    г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="location">
+                  <a href="mailto:info@example.com" class="contact"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="location">
+                  <a href="tel:+380991111111" class="contact"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-right">
+            <h3 class="footer-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <ul class="footer-right-list list">
+              <li class="footer-right-item">
+                <a href="" class="footer-right-link link">
+                  <svg class="footer-right-icoons">
+                    <use href="./images/icoons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="location">
-                <a href="mailto:info@example.com" class="contact"
-                  >info@example.com</a
-                >
+              <li class="footer-right-item">
+                <a href="" class="footer-right-link link">
+                  <svg class="footer-right-icoons">
+                    <use href="./images/icoons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="location">
-                <a href="tel:+380991111111" class="contact"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer-right-item">
+                <a href="" class="footer-right-link link">
+                  <svg class="footer-right-icoons">
+                    <use href="./images/icoons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-right-item">
+                <a href="" class="footer-right-link link">
+                  <svg class="footer-right-icoons">
+                    <use href="./images/icoons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-right">
-          <h3 class="footer-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="footer-right-list list">
-            <li class="footer-right-item">
-              <a href="" class="footer-right-link link">
-                <svg class="footer-right-icoons">
-                  <use href="./images/icoons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-right-item">
-              <a href="" class="footer-right-link link">
-                <svg class="footer-right-icoons">
-                  <use href="./images/icoons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-right-item">
-              <a href="" class="footer-right-link link">
-                <svg class="footer-right-icoons">
-                  <use href="./images/icoons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-right-item">
-              <a href="" class="footer-right-link link">
-                <svg class="footer-right-icoons">
-                  <use href="./images/icoons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-         </div>
+          </div>
         </div>
         <div class="footer-centr-right">
           <h3 class="footer-text">Подпишитесь на рассылку</h3>

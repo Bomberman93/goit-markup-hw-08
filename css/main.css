@@ -315,7 +315,7 @@ body {
 }
 
 .site-nave {
-  display: flex;
+  display: none;
 }
 
 .header .item:not(:last-child) {
@@ -333,7 +333,8 @@ body {
 }
 
 .logo-header {
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-webstudio {
@@ -397,7 +398,7 @@ body {
 
 /*-----------------contact-header--------*/
 .contact-header {
-  display: flex;
+  display: none;
 }
 
 .item-contact {
@@ -461,6 +462,105 @@ body {
 
 .header-email-svg:hover, .header-email-svg:focus {
   fill: var(--accent-color);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-open {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.menu-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-contact-list {
+  margin-bottom: 64px;
+}
+
+.mobile-contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-menu-email-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-social-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.mobile-social-item {
+  margin-right: 20px;
+}
+
+.mobile-social-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .hero {
@@ -755,6 +855,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.command-image {
+  width: 100%;
 }
 
 .command-nave .position {
