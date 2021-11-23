@@ -872,12 +872,15 @@ body {
   }
 }
 
+.command-nave {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .command-nave {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -30px;
   }
 }
 
@@ -885,6 +888,7 @@ body {
   .command-nave {
     flex-wrap: nowrap;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 

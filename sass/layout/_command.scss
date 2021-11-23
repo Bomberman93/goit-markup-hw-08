@@ -10,17 +10,18 @@
   }
 
   .command-nave {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      // margin-right: -30px;
-      margin-bottom: -30px;
-    }
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-      margin-right: 0;
-    }
+    margin-bottom: -30px;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // margin-right: -30px; 
+      }
+      @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        margin-right: 0;
+        margin-bottom: 0;
+      }
   }
 
   .command-people {
